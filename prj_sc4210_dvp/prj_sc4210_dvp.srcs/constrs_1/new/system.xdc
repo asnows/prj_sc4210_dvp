@@ -197,11 +197,12 @@ set_property ASYNC_REG true [get_cells {isp_model_axis_i/gaus_sharp_axis_i/sharp
 
 
 
+
 create_debug_core u_ila_0 ila
 set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
 set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
 set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
-set_property C_DATA_DEPTH 4096 [get_debug_cores u_ila_0]
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_0]
 set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
 set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
 set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
@@ -209,12 +210,12 @@ set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
 set_property port_width 1 [get_debug_ports u_ila_0/clk]
 connect_debug_port u_ila_0/clk [get_nets [list CMOS_PIXCLK_IBUF_BUFG]]
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
-set_property port_width 32 [get_debug_ports u_ila_0/probe0]
-connect_debug_port u_ila_0/probe0 [get_nets [list {data_conv_model_i/m_axis_tdata[0]} {data_conv_model_i/m_axis_tdata[1]} {data_conv_model_i/m_axis_tdata[2]} {data_conv_model_i/m_axis_tdata[3]} {data_conv_model_i/m_axis_tdata[4]} {data_conv_model_i/m_axis_tdata[5]} {data_conv_model_i/m_axis_tdata[6]} {data_conv_model_i/m_axis_tdata[7]} {data_conv_model_i/m_axis_tdata[8]} {data_conv_model_i/m_axis_tdata[9]} {data_conv_model_i/m_axis_tdata[10]} {data_conv_model_i/m_axis_tdata[11]} {data_conv_model_i/m_axis_tdata[12]} {data_conv_model_i/m_axis_tdata[13]} {data_conv_model_i/m_axis_tdata[14]} {data_conv_model_i/m_axis_tdata[15]} {data_conv_model_i/m_axis_tdata[16]} {data_conv_model_i/m_axis_tdata[17]} {data_conv_model_i/m_axis_tdata[18]} {data_conv_model_i/m_axis_tdata[19]} {data_conv_model_i/m_axis_tdata[20]} {data_conv_model_i/m_axis_tdata[21]} {data_conv_model_i/m_axis_tdata[22]} {data_conv_model_i/m_axis_tdata[23]} {data_conv_model_i/m_axis_tdata[24]} {data_conv_model_i/m_axis_tdata[25]} {data_conv_model_i/m_axis_tdata[26]} {data_conv_model_i/m_axis_tdata[27]} {data_conv_model_i/m_axis_tdata[28]} {data_conv_model_i/m_axis_tdata[29]} {data_conv_model_i/m_axis_tdata[30]} {data_conv_model_i/m_axis_tdata[31]}]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {cmos_sampling_i/data_out[0]} {cmos_sampling_i/data_out[1]} {cmos_sampling_i/data_out[2]} {cmos_sampling_i/data_out[3]} {cmos_sampling_i/data_out[4]} {cmos_sampling_i/data_out[5]} {cmos_sampling_i/data_out[6]} {cmos_sampling_i/data_out[7]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
 set_property port_width 8 [get_debug_ports u_ila_0/probe1]
-connect_debug_port u_ila_0/probe1 [get_nets [list {cmos_sampling_i/data_in[4]} {cmos_sampling_i/data_in[5]} {cmos_sampling_i/data_in[6]} {cmos_sampling_i/data_in[7]} {cmos_sampling_i/data_in[8]} {cmos_sampling_i/data_in[9]} {cmos_sampling_i/data_in[10]} {cmos_sampling_i/data_in[11]}]]
+connect_debug_port u_ila_0/probe1 [get_nets [list  {cmos_sampling_i/data_in[4]} {cmos_sampling_i/data_in[5]} {cmos_sampling_i/data_in[6]} {cmos_sampling_i/data_in[7]} {cmos_sampling_i/data_in[8]} {cmos_sampling_i/data_in[9]} {cmos_sampling_i/data_in[10]} {cmos_sampling_i/data_in[11]}]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
 set_property port_width 8 [get_debug_ports u_ila_0/probe2]
@@ -230,108 +231,122 @@ connect_debug_port u_ila_0/probe4 [get_nets [list cmos_sampling_i/href_out]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
 set_property port_width 1 [get_debug_ports u_ila_0/probe5]
-connect_debug_port u_ila_0/probe5 [get_nets [list axis_switch_i/m_0_axis_tready]]
+connect_debug_port u_ila_0/probe5 [get_nets [list opencv_model_i/m_axis_tlast]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
 set_property port_width 1 [get_debug_ports u_ila_0/probe6]
-connect_debug_port u_ila_0/probe6 [get_nets [list axis_switch_i/m_0_axis_tuser]]
+connect_debug_port u_ila_0/probe6 [get_nets [list vcap_i/m_axis_tlast]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
 set_property port_width 1 [get_debug_ports u_ila_0/probe7]
-connect_debug_port u_ila_0/probe7 [get_nets [list axis_switch_i/m_0_axis_tvalid]]
+connect_debug_port u_ila_0/probe7 [get_nets [list isp_model_axis_i/m_axis_tlast]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
 set_property port_width 1 [get_debug_ports u_ila_0/probe8]
-connect_debug_port u_ila_0/probe8 [get_nets [list axis_switch_i/m_1_axis_tlast]]
+connect_debug_port u_ila_0/probe8 [get_nets [list opencv_model_i/m_axis_tready]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
 set_property port_width 1 [get_debug_ports u_ila_0/probe9]
-connect_debug_port u_ila_0/probe9 [get_nets [list axis_switch_i/m_1_axis_tready]]
+connect_debug_port u_ila_0/probe9 [get_nets [list vcap_i/m_axis_tready]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
 set_property port_width 1 [get_debug_ports u_ila_0/probe10]
-connect_debug_port u_ila_0/probe10 [get_nets [list axis_switch_i/m_1_axis_tuser]]
+connect_debug_port u_ila_0/probe10 [get_nets [list isp_model_axis_i/m_axis_tready]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
 set_property port_width 1 [get_debug_ports u_ila_0/probe11]
-connect_debug_port u_ila_0/probe11 [get_nets [list axis_switch_i/m_1_axis_tvalid]]
+connect_debug_port u_ila_0/probe11 [get_nets [list isp_model_axis_i/m_axis_tuser]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
 set_property port_width 1 [get_debug_ports u_ila_0/probe12]
-connect_debug_port u_ila_0/probe12 [get_nets [list data_conv_model_i/m_axis_tlast]]
+connect_debug_port u_ila_0/probe12 [get_nets [list opencv_model_i/m_axis_tuser]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
 set_property port_width 1 [get_debug_ports u_ila_0/probe13]
-connect_debug_port u_ila_0/probe13 [get_nets [list opencv_model_i/m_axis_tlast]]
+connect_debug_port u_ila_0/probe13 [get_nets [list vcap_i/m_axis_tuser]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
 set_property port_width 1 [get_debug_ports u_ila_0/probe14]
-connect_debug_port u_ila_0/probe14 [get_nets [list vcap_i/m_axis_tlast]]
+connect_debug_port u_ila_0/probe14 [get_nets [list isp_model_axis_i/m_axis_tvalid]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
 set_property port_width 1 [get_debug_ports u_ila_0/probe15]
-connect_debug_port u_ila_0/probe15 [get_nets [list isp_model_axis_i/m_axis_tlast]]
+connect_debug_port u_ila_0/probe15 [get_nets [list opencv_model_i/m_axis_tvalid]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
 set_property port_width 1 [get_debug_ports u_ila_0/probe16]
-connect_debug_port u_ila_0/probe16 [get_nets [list opencv_model_i/m_axis_tready]]
+connect_debug_port u_ila_0/probe16 [get_nets [list vcap_i/m_axis_tvalid]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
 set_property port_width 1 [get_debug_ports u_ila_0/probe17]
-connect_debug_port u_ila_0/probe17 [get_nets [list isp_model_axis_i/m_axis_tready]]
+connect_debug_port u_ila_0/probe17 [get_nets [list cmos_sampling_i/vsync]]
 create_debug_port u_ila_0 probe
 set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
 set_property port_width 1 [get_debug_ports u_ila_0/probe18]
-connect_debug_port u_ila_0/probe18 [get_nets [list vcap_i/m_axis_tready]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
-set_property port_width 1 [get_debug_ports u_ila_0/probe19]
-connect_debug_port u_ila_0/probe19 [get_nets [list data_conv_model_i/m_axis_tready]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
-set_property port_width 1 [get_debug_ports u_ila_0/probe20]
-connect_debug_port u_ila_0/probe20 [get_nets [list data_conv_model_i/m_axis_tuser]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
-set_property port_width 1 [get_debug_ports u_ila_0/probe21]
-connect_debug_port u_ila_0/probe21 [get_nets [list vcap_i/m_axis_tuser]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
-set_property port_width 1 [get_debug_ports u_ila_0/probe22]
-connect_debug_port u_ila_0/probe22 [get_nets [list isp_model_axis_i/m_axis_tuser]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
-set_property port_width 1 [get_debug_ports u_ila_0/probe23]
-connect_debug_port u_ila_0/probe23 [get_nets [list opencv_model_i/m_axis_tuser]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe24]
-set_property port_width 1 [get_debug_ports u_ila_0/probe24]
-connect_debug_port u_ila_0/probe24 [get_nets [list vcap_i/m_axis_tvalid]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe25]
-set_property port_width 1 [get_debug_ports u_ila_0/probe25]
-connect_debug_port u_ila_0/probe25 [get_nets [list data_conv_model_i/m_axis_tvalid]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe26]
-set_property port_width 1 [get_debug_ports u_ila_0/probe26]
-connect_debug_port u_ila_0/probe26 [get_nets [list isp_model_axis_i/m_axis_tvalid]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe27]
-set_property port_width 1 [get_debug_ports u_ila_0/probe27]
-connect_debug_port u_ila_0/probe27 [get_nets [list opencv_model_i/m_axis_tvalid]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe28]
-set_property port_width 1 [get_debug_ports u_ila_0/probe28]
-connect_debug_port u_ila_0/probe28 [get_nets [list cmos_sampling_i/pixel_clk]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe29]
-set_property port_width 1 [get_debug_ports u_ila_0/probe29]
-connect_debug_port u_ila_0/probe29 [get_nets [list cmos_sampling_i/vsync]]
-create_debug_port u_ila_0 probe
-set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe30]
-set_property port_width 1 [get_debug_ports u_ila_0/probe30]
-connect_debug_port u_ila_0/probe30 [get_nets [list cmos_sampling_i/vsync_out]]
+connect_debug_port u_ila_0/probe18 [get_nets [list cmos_sampling_i/vsync_out]]
+create_debug_core u_ila_1 ila
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_1]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_1]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_1]
+set_property C_DATA_DEPTH 2048 [get_debug_cores u_ila_1]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_1]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_1]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_1]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_1]
+set_property port_width 1 [get_debug_ports u_ila_1/clk]
+connect_debug_port u_ila_1/clk [get_nets [list design_1_wrapper_i/design_1_i/processing_system7_0/inst/FCLK_CLK0]]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe0]
+set_property port_width 32 [get_debug_ports u_ila_1/probe0]
+connect_debug_port u_ila_1/probe0 [get_nets [list {data_conv_model_i/m_axis_tdata[0]} {data_conv_model_i/m_axis_tdata[1]} {data_conv_model_i/m_axis_tdata[2]} {data_conv_model_i/m_axis_tdata[3]} {data_conv_model_i/m_axis_tdata[4]} {data_conv_model_i/m_axis_tdata[5]} {data_conv_model_i/m_axis_tdata[6]} {data_conv_model_i/m_axis_tdata[7]} {data_conv_model_i/m_axis_tdata[8]} {data_conv_model_i/m_axis_tdata[9]} {data_conv_model_i/m_axis_tdata[10]} {data_conv_model_i/m_axis_tdata[11]} {data_conv_model_i/m_axis_tdata[12]} {data_conv_model_i/m_axis_tdata[13]} {data_conv_model_i/m_axis_tdata[14]} {data_conv_model_i/m_axis_tdata[15]} {data_conv_model_i/m_axis_tdata[16]} {data_conv_model_i/m_axis_tdata[17]} {data_conv_model_i/m_axis_tdata[18]} {data_conv_model_i/m_axis_tdata[19]} {data_conv_model_i/m_axis_tdata[20]} {data_conv_model_i/m_axis_tdata[21]} {data_conv_model_i/m_axis_tdata[22]} {data_conv_model_i/m_axis_tdata[23]} {data_conv_model_i/m_axis_tdata[24]} {data_conv_model_i/m_axis_tdata[25]} {data_conv_model_i/m_axis_tdata[26]} {data_conv_model_i/m_axis_tdata[27]} {data_conv_model_i/m_axis_tdata[28]} {data_conv_model_i/m_axis_tdata[29]} {data_conv_model_i/m_axis_tdata[30]} {data_conv_model_i/m_axis_tdata[31]}]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe1]
+set_property port_width 1 [get_debug_ports u_ila_1/probe1]
+connect_debug_port u_ila_1/probe1 [get_nets [list axis_switch_i/m_0_axis_tready]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe2]
+set_property port_width 1 [get_debug_ports u_ila_1/probe2]
+connect_debug_port u_ila_1/probe2 [get_nets [list axis_switch_i/m_0_axis_tuser]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe3]
+set_property port_width 1 [get_debug_ports u_ila_1/probe3]
+connect_debug_port u_ila_1/probe3 [get_nets [list axis_switch_i/m_0_axis_tvalid]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe4]
+set_property port_width 1 [get_debug_ports u_ila_1/probe4]
+connect_debug_port u_ila_1/probe4 [get_nets [list axis_switch_i/m_1_axis_tlast]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe5]
+set_property port_width 1 [get_debug_ports u_ila_1/probe5]
+connect_debug_port u_ila_1/probe5 [get_nets [list axis_switch_i/m_1_axis_tready]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe6]
+set_property port_width 1 [get_debug_ports u_ila_1/probe6]
+connect_debug_port u_ila_1/probe6 [get_nets [list axis_switch_i/m_1_axis_tuser]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe7]
+set_property port_width 1 [get_debug_ports u_ila_1/probe7]
+connect_debug_port u_ila_1/probe7 [get_nets [list axis_switch_i/m_1_axis_tvalid]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe8]
+set_property port_width 1 [get_debug_ports u_ila_1/probe8]
+connect_debug_port u_ila_1/probe8 [get_nets [list data_conv_model_i/m_axis_tlast]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe9]
+set_property port_width 1 [get_debug_ports u_ila_1/probe9]
+connect_debug_port u_ila_1/probe9 [get_nets [list data_conv_model_i/m_axis_tready]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe10]
+set_property port_width 1 [get_debug_ports u_ila_1/probe10]
+connect_debug_port u_ila_1/probe10 [get_nets [list data_conv_model_i/m_axis_tuser]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe11]
+set_property port_width 1 [get_debug_ports u_ila_1/probe11]
+connect_debug_port u_ila_1/probe11 [get_nets [list data_conv_model_i/m_axis_tvalid]]
+create_debug_port u_ila_1 probe
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_1/probe12]
+set_property port_width 1 [get_debug_ports u_ila_1/probe12]
+connect_debug_port u_ila_1/probe12 [get_nets [list cmos_sampling_i/pixel_clk]]
 set_property C_CLK_INPUT_FREQ_HZ 300000000 [get_debug_cores dbg_hub]
 set_property C_ENABLE_CLK_DIVIDER false [get_debug_cores dbg_hub]
 set_property C_USER_SCAN_CHAIN 1 [get_debug_cores dbg_hub]
-connect_debug_port dbg_hub/clk [get_nets CMOS_PIXCLK_IBUF_BUFG]
+connect_debug_port dbg_hub/clk [get_nets FCLK_CLK0]
