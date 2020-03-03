@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Jan  2 16:50:19 2020
+| Date             : Mon Mar  2 17:26:06 2020
 | Host             : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.755        |
+| Total On-Chip Power (W)  | 1.757        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.609        |
+| Dynamic (W)              | 1.611        |
 | Device Static (W)        | 0.146        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 64.8         |
-| Junction Temperature (C) | 45.2         |
+| Max Ambient (C)          | 64.7         |
+| Junction Temperature (C) | 45.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.065 |        8 |       --- |             --- |
-| Slice Logic              |     0.063 |    49389 |       --- |             --- |
-|   LUT as Logic           |     0.052 |    16152 |     53200 |           30.36 |
+| Slice Logic              |     0.063 |    49390 |       --- |             --- |
+|   LUT as Logic           |     0.052 |    16134 |     53200 |           30.33 |
 |   CARRY4                 |     0.007 |     1439 |     13300 |           10.82 |
 |   Register               |     0.004 |    23860 |    106400 |           22.42 |
 |   LUT as Shift Register  |    <0.001 |     1010 |     17400 |            5.80 |
@@ -62,14 +62,14 @@ Table of Contents
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
 |   F7/F8 Muxes            |    <0.001 |      136 |     53200 |            0.26 |
 |   Others                 |     0.000 |     2565 |       --- |             --- |
-| Signals                  |     0.063 |    34177 |       --- |             --- |
+| Signals                  |     0.066 |    34177 |       --- |             --- |
 | Block RAM                |     0.008 |       42 |       140 |           30.00 |
 | MMCM                     |     0.122 |        1 |         4 |           25.00 |
 | DSPs                     |    <0.001 |        2 |       220 |            0.91 |
-| I/O                      |     0.002 |       20 |       125 |           16.00 |
+| I/O                      |     0.002 |       21 |       125 |           16.80 |
 | PS7                      |     1.286 |        1 |       --- |             --- |
 | Static Power             |     0.146 |          |           |                 |
-| Total                    |     1.755 |          |           |                 |
+| Total                    |     1.757 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,7 +79,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.217 |       0.200 |      0.017 |
+| Vccint    |       1.000 |     0.219 |       0.202 |      0.017 |
 | Vccaux    |       1.800 |     0.083 |       0.068 |      0.015 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -159,7 +159,7 @@ Table of Contents
 +---------------------------------------------------------------------------------------------------------+-----------+
 | Name                                                                                                    | Power (W) |
 +---------------------------------------------------------------------------------------------------------+-----------+
-| top                                                                                                     |     1.609 |
+| top                                                                                                     |     1.611 |
 |   SC30_v1_0_S00_AXI_inst                                                                                |     0.003 |
 |   Trgger                                                                                                |    <0.001 |
 |   axis_switch_i                                                                                         |    <0.001 |
@@ -224,7 +224,7 @@ Table of Contents
 |     inst                                                                                                |     0.003 |
 |       BSCANID.u_xsdbm_id                                                                                |     0.003 |
 |         CORE_XSDB.UUT_MASTER                                                                            |     0.002 |
-|           U_ICON_INTERFACE                                                                              |     0.001 |
+|           U_ICON_INTERFACE                                                                              |     0.002 |
 |             U_CMD1                                                                                      |    <0.001 |
 |             U_CMD2                                                                                      |    <0.001 |
 |             U_CMD3                                                                                      |    <0.001 |
@@ -309,6 +309,7 @@ Table of Contents
 |   design_1_wrapper_i                                                                                    |     1.488 |
 |     IIC_0_scl_iobuf                                                                                     |    <0.001 |
 |     IIC_0_sda_iobuf                                                                                     |    <0.001 |
+|     PHY_RST_tri_iobuf_0                                                                                 |    <0.001 |
 |     design_1_i                                                                                          |     1.487 |
 |       axi_gpio_0                                                                                        |    <0.001 |
 |         U0                                                                                              |    <0.001 |
@@ -701,8 +702,8 @@ Table of Contents
 |                   inst_arb_stall_late                                                                   |    <0.001 |
 |       axi_vdma_imgCapture0                                                                              |     0.009 |
 |         U0                                                                                              |     0.009 |
-|           AXI_LITE_REG_INTERFACE_I                                                                      |     0.001 |
-|             GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                               |     0.001 |
+|           AXI_LITE_REG_INTERFACE_I                                                                      |    <0.001 |
+|             GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                               |    <0.001 |
 |               GEN_LITE_IS_ASYNC.GEN_S2MM_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_S2MM_CDC_I                  |    <0.001 |
 |           GEN_SPRT_FOR_S2MM.GEN_S2MM_DRE_OFF_SKID.I_S2MM_SKID_FLUSH_SOF                                 |    <0.001 |
 |           GEN_SPRT_FOR_S2MM.S2MMADDR32.I_S2MM_DMA_MNGR                                                  |     0.001 |
@@ -838,7 +839,7 @@ Table of Contents
 |               GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I                                                      |    <0.001 |
 |       axi_vdma_imgCapture1                                                                              |     0.010 |
 |         U0                                                                                              |     0.010 |
-|           AXI_LITE_REG_INTERFACE_I                                                                      |     0.001 |
+|           AXI_LITE_REG_INTERFACE_I                                                                      |    <0.001 |
 |             GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                               |    <0.001 |
 |               GEN_LITE_IS_ASYNC.GEN_S2MM_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_S2MM_CDC_I                  |    <0.001 |
 |           GEN_SPRT_FOR_S2MM.GEN_S2MM_DRE_OFF_SKID.I_S2MM_SKID_FLUSH_SOF                                 |    <0.001 |
@@ -975,7 +976,7 @@ Table of Contents
 |               GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I                                                      |    <0.001 |
 |       axi_vdma_imgCapture2                                                                              |     0.009 |
 |         U0                                                                                              |     0.009 |
-|           AXI_LITE_REG_INTERFACE_I                                                                      |    <0.001 |
+|           AXI_LITE_REG_INTERFACE_I                                                                      |     0.001 |
 |             GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                               |    <0.001 |
 |               GEN_LITE_IS_ASYNC.GEN_S2MM_ONLY_ASYNC_LITE_ACCESS.LITE_WVALID_S2MM_CDC_I                  |    <0.001 |
 |           GEN_SPRT_FOR_S2MM.GEN_S2MM_DRE_OFF_SKID.I_S2MM_SKID_FLUSH_SOF                                 |    <0.001 |
@@ -1110,8 +1111,8 @@ Table of Contents
 |               GEN_MIN_FOR_ASYNC.LITE_RESET_CDC_I                                                        |    <0.001 |
 |               GEN_RESET_FOR_ASYNC.AXIS_RESET_CDC_I                                                      |    <0.001 |
 |               GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I                                                      |    <0.001 |
-|       axi_vdma_memCopy                                                                                  |     0.015 |
-|         U0                                                                                              |     0.015 |
+|       axi_vdma_memCopy                                                                                  |     0.014 |
+|         U0                                                                                              |     0.014 |
 |           AXI_LITE_REG_INTERFACE_I                                                                      |     0.002 |
 |             GEN_AXI_LITE_IF.AXI_LITE_IF_I                                                               |     0.002 |
 |               GEN_LITE_IS_ASYNC.GEN_ASYNC_LITE_ACCESS.LITE_WVALID_MM2S_CDC_I                            |    <0.001 |
@@ -1680,8 +1681,8 @@ Table of Contents
 |                             prim_noinit.ram                                                             |    <0.001 |
 |                           ramloop[1].ram.r                                                              |    <0.001 |
 |                             prim_noinit.ram                                                             |    <0.001 |
-|   opencv_model_i                                                                                        |     0.076 |
-|     sobel_axis_i                                                                                        |     0.075 |
+|   opencv_model_i                                                                                        |     0.077 |
+|     sobel_axis_i                                                                                        |     0.076 |
 |       maxtri7x7_shift_i                                                                                 |     0.004 |
 |         line_buff_1                                                                                     |    <0.001 |
 |           U0                                                                                            |    <0.001 |
@@ -1829,10 +1830,10 @@ Table of Contents
 |                               prim_noinit.ram                                                           |    <0.001 |
 |       sobel3x3_algorithm_i                                                                              |     0.004 |
 |       sobel5x5_algorithm_i                                                                              |     0.016 |
-|       sobel7x7_algorithm_i                                                                              |     0.051 |
-|   u_ila_0                                                                                               |     0.008 |
-|     inst                                                                                                |     0.008 |
-|       ila_core_inst                                                                                     |     0.008 |
+|       sobel7x7_algorithm_i                                                                              |     0.052 |
+|   u_ila_0                                                                                               |     0.007 |
+|     inst                                                                                                |     0.007 |
+|       ila_core_inst                                                                                     |     0.007 |
 |         ila_trace_memory_inst                                                                           |    <0.001 |
 |           SUBCORE_RAM_BLK_MEM_1.trace_block_memory                                                      |    <0.001 |
 |             inst_blk_mem_gen                                                                            |    <0.001 |
@@ -1897,7 +1898,7 @@ Table of Contents
 |                       u_srlB                                                                            |    <0.001 |
 |                       u_srlC                                                                            |    <0.001 |
 |                       u_srlD                                                                            |    <0.001 |
-|         u_ila_regs                                                                                      |     0.006 |
+|         u_ila_regs                                                                                      |     0.005 |
 |           MU_SRL[0].mu_srl_reg                                                                          |    <0.001 |
 |           MU_SRL[10].mu_srl_reg                                                                         |    <0.001 |
 |           MU_SRL[11].mu_srl_reg                                                                         |    <0.001 |

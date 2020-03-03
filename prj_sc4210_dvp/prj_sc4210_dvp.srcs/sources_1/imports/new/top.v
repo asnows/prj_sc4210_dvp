@@ -68,7 +68,7 @@
 //        input      CMOS_LREF,    //  行同步信号
 //        input[9:0] CMOS_DATA,    //  像素数据
         
-        
+        inout [0:0]PHY_RST_tri_io,
         output     E_OUT1,
         output     E_OUT2,  
         input      E_IN1
@@ -307,7 +307,7 @@
         .VideoStream_S2MM_1_tuser (VideoStream_axis_tuser     ), 
         .VideoStream_S2MM_1_tvalid(VideoStream_axis_tvalid    ),
         
-        
+        .PHY_RST_tri_io      (PHY_RST_tri_io        ),
         .IIC_0_scl_io        (iic_0_scl_io          ),    
         .IIC_0_sda_io        (iic_0_sda_io          ),    
         .peripheral_aresetn  (sys_resetn            ),

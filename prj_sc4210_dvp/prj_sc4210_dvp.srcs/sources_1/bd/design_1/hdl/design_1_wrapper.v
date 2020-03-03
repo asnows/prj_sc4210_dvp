@@ -1,7 +1,7 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Fri Mar 15 15:03:13 2019
+//Date        : Mon Mar  2 16:43:51 2020
 //Host        : VT2OB6D7ZB52FZ0 running 64-bit major release  (build 9200)
 //Command     : generate_target design_1_wrapper.bd
 //Design      : design_1_wrapper
@@ -72,6 +72,7 @@ module design_1_wrapper
     M00_AXI_wready,
     M00_AXI_wstrb,
     M00_AXI_wvalid,
+    PHY_RST_tri_io,
     VideoStream_S2MM_1_tdata,
     VideoStream_S2MM_1_tkeep,
     VideoStream_S2MM_1_tlast,
@@ -142,6 +143,7 @@ module design_1_wrapper
   input [0:0]M00_AXI_wready;
   output [3:0]M00_AXI_wstrb;
   output [0:0]M00_AXI_wvalid;
+  inout [0:0]PHY_RST_tri_io;
   input [7:0]VideoStream_S2MM_1_tdata;
   input [0:0]VideoStream_S2MM_1_tkeep;
   input VideoStream_S2MM_1_tlast;
@@ -219,6 +221,10 @@ module design_1_wrapper
   wire [0:0]M00_AXI_wready;
   wire [3:0]M00_AXI_wstrb;
   wire [0:0]M00_AXI_wvalid;
+  wire [0:0]PHY_RST_tri_i_0;
+  wire [0:0]PHY_RST_tri_io_0;
+  wire [0:0]PHY_RST_tri_o_0;
+  wire [0:0]PHY_RST_tri_t_0;
   wire [7:0]VideoStream_S2MM_1_tdata;
   wire [0:0]VideoStream_S2MM_1_tkeep;
   wire VideoStream_S2MM_1_tlast;
@@ -238,6 +244,11 @@ module design_1_wrapper
         .IO(IIC_0_sda_io),
         .O(IIC_0_sda_i),
         .T(IIC_0_sda_t));
+  IOBUF PHY_RST_tri_iobuf_0
+       (.I(PHY_RST_tri_o_0),
+        .IO(PHY_RST_tri_io[0]),
+        .O(PHY_RST_tri_i_0),
+        .T(PHY_RST_tri_t_0));
   design_1 design_1_i
        (.CMOS_XCK(CMOS_XCK),
         .DDR_addr(DDR_addr),
@@ -305,6 +316,9 @@ module design_1_wrapper
         .M00_AXI_wready(M00_AXI_wready),
         .M00_AXI_wstrb(M00_AXI_wstrb),
         .M00_AXI_wvalid(M00_AXI_wvalid),
+        .PHY_RST_tri_i(PHY_RST_tri_i_0),
+        .PHY_RST_tri_o(PHY_RST_tri_o_0),
+        .PHY_RST_tri_t(PHY_RST_tri_t_0),
         .VideoStream_S2MM_1_tdata(VideoStream_S2MM_1_tdata),
         .VideoStream_S2MM_1_tkeep(VideoStream_S2MM_1_tkeep),
         .VideoStream_S2MM_1_tlast(VideoStream_S2MM_1_tlast),

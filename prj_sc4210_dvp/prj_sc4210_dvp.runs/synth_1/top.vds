@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Jan  2 16:12:27 2020
-# Process ID: 8604
+# Start of session at: Mon Mar  2 16:50:09 2020
+# Process ID: 12732
 # Current directory: E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.runs/synth_1/top.vds
@@ -14,17 +14,15 @@ source top.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/WorkSpace/ip'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
-WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libps7.so'. Please regenerate to continue.
-WARNING: [IP_Flow 19-3664] IP 'design_1_processing_system7_0_0' generated file not found 'e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/sim/libremoteport.so'. Please regenerate to continue.
-add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 386.984 ; gain = 80.488
+add_files: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 387.871 ; gain = 80.953
 Command: synth_design -top top -part xc7z020clg400-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11064 
+INFO: Helper process launched with PID 13116 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 519.520 ; gain = 125.426
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 520.391 ; gain = 125.027
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/imports/new/top.v:29]
 	Parameter RAW_WIDTH bound to: 12 - type: integer 
@@ -240,8 +238,8 @@ WARNING: [Synth 8-6014] Unused sequential element Dual.gpio_Data_In_reg was remo
 INFO: [Synth 8-256] done synthesizing module 'GPIO_Core' (7#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:178]
 INFO: [Synth 8-256] done synthesizing module 'axi_gpio' (8#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/c193/hdl/axi_gpio_v2_0_vh_rfs.vhd:1358]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_gpio_0_1' (9#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/synth/design_1_axi_gpio_0_1.vhd:85]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1505]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3791]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_interconnect_0_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1520]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CA5Z32' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3806]
 INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_17_axi_protocol_converter' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -395,11 +393,11 @@ INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_17_r_
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_17_axi3_conv' (34#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v:954]
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_17_axi_protocol_converter' (35#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (36#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/synth/design_1_auto_pc_0.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (37#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3791]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5759]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (38#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5759]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1F69D31' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5863]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1F69D31' (39#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5863]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CA5Z32' (37#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3806]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_O7FAN0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5774]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_O7FAN0' (38#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5774]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1F69D31' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5878]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1F69D31' (39#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5878]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_2' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/synth/design_1_xbar_2.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_18_axi_crossbar' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -1198,15 +1196,15 @@ WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_wri
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_18_crossbar' (58#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_18_axi_crossbar' (59#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_2' (60#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_xbar_2/synth/design_1_xbar_2.v:59]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2080]
-WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2097]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2098]
-WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2100]
-WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2101]
-WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_2' requires 78 connections, but only 76 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2030]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (61#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1505]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2109]
-INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:4196]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2095]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2112]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2113]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2115]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'design_1_xbar_2' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2116]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_2' requires 78 connections, but only 76 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2045]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_interconnect_0_0' (61#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1520]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_mem_intercon_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2124]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1R706YB' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:4211]
 INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/synth/design_1_auto_pc_1.v:58]
 INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_17_axi_protocol_converter__parameterized0' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -1253,11 +1251,11 @@ INFO: [Synth 8-6157] synthesizing module 'axi_protocol_converter_v2_1_17_axi3_co
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_17_axi3_conv__parameterized0' (61#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v:954]
 INFO: [Synth 8-6155] done synthesizing module 'axi_protocol_converter_v2_1_17_axi_protocol_converter__parameterized0' (61#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4811]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (62#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/synth/design_1_auto_pc_1.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (63#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:4196]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5634]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (64#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5634]
-INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5988]
-INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (65#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5988]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1R706YB' (63#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:4211]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_7HNO1D' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5649]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_7HNO1D' (64#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:5649]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1W60HW0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:6003]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1W60HW0' (65#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:6003]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_1' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
 INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_18_axi_crossbar__parameterized0' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 	Parameter C_FAMILY bound to: zynq - type: string 
@@ -1542,8 +1540,8 @@ WARNING: [Synth 8-6014] Unused sequential element gen_debug_trans_seq.debug_ar_t
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_18_crossbar__parameterized0' (65#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
 INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_18_axi_crossbar__parameterized0' (65#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/15a3/hdl/axi_crossbar_v2_1_vl_rfs.v:4884]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_1' (66#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_xbar_1/synth/design_1_xbar_1.v:59]
-WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_1' requires 78 connections, but only 59 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2530]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (67#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2109]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_1' requires 78 connections, but only 59 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2545]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_mem_intercon_0' (67#1) [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:2124]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:57]
 INFO: [Synth 8-6157] synthesizing module 'bd_afc3' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
 INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_5Y9LOC' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:451]
@@ -3546,7 +3544,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (211#1) [e:/WorkSpace/pr
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_vdma_1_0' (212#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_1_0/synth/design_1_axi_vdma_1_0.vhd:109]
-WARNING: [Synth 8-350] instance 'axi_vdma_imgCapture0' of module 'design_1_axi_vdma_1_0' requires 45 connections, but only 43 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:862]
+WARNING: [Synth 8-350] instance 'axi_vdma_imgCapture0' of module 'design_1_axi_vdma_1_0' requires 45 connections, but only 43 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:874]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_vdma_0_0' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/synth/design_1_axi_vdma_0_0.vhd:109]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -3616,7 +3614,7 @@ INFO: [Synth 8-3491] module 'axi_vdma' declared at 'e:/WorkSpace/project/FPGA/pr
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_vdma_0_0' (213#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_0/synth/design_1_axi_vdma_0_0.vhd:109]
-WARNING: [Synth 8-350] instance 'axi_vdma_imgCapture1' of module 'design_1_axi_vdma_0_0' requires 45 connections, but only 43 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:906]
+WARNING: [Synth 8-350] instance 'axi_vdma_imgCapture1' of module 'design_1_axi_vdma_0_0' requires 45 connections, but only 43 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:918]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_vdma_imgCapture1_0' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/synth/design_1_axi_vdma_imgCapture1_0.vhd:109]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -3686,7 +3684,7 @@ INFO: [Synth 8-3491] module 'axi_vdma' declared at 'e:/WorkSpace/project/FPGA/pr
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_vdma_imgCapture1_0' (214#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_imgCapture1_0/synth/design_1_axi_vdma_imgCapture1_0.vhd:109]
-WARNING: [Synth 8-350] instance 'axi_vdma_imgCapture2' of module 'design_1_axi_vdma_imgCapture1_0' requires 45 connections, but only 43 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:950]
+WARNING: [Synth 8-350] instance 'axi_vdma_imgCapture2' of module 'design_1_axi_vdma_imgCapture1_0' requires 45 connections, but only 43 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:962]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_vdma_0_2' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/synth/design_1_axi_vdma_0_2.vhd:131]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -4822,7 +4820,7 @@ INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM ge
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_vdma_0_2' (222#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_2/synth/design_1_axi_vdma_0_2.vhd:131]
-WARNING: [Synth 8-350] instance 'axi_vdma_memCopy' of module 'design_1_axi_vdma_0_2' requires 67 connections, but only 64 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:994]
+WARNING: [Synth 8-350] instance 'axi_vdma_memCopy' of module 'design_1_axi_vdma_0_2' requires 67 connections, but only 64 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1006]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_vdma_0_1' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/synth/design_1_axi_vdma_0_1.vhd:109]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
@@ -5117,7 +5115,7 @@ INFO: [Synth 8-256] done synthesizing module 'axi_vdma__parameterized4' (222#1) 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "no" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_vdma_0_1' (223#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_vdma_0_1/synth/design_1_axi_vdma_0_1.vhd:109]
-WARNING: [Synth 8-350] instance 'axi_vdma_videoStream' of module 'design_1_axi_vdma_0_1' requires 45 connections, but only 44 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1059]
+WARNING: [Synth 8-350] instance 'axi_vdma_videoStream' of module 'design_1_axi_vdma_0_1' requires 45 connections, but only 44 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1071]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
@@ -5171,7 +5169,7 @@ WARNING: [Synth 8-350] instance 'axi_vdma_videoStream' of module 'design_1_axi_v
 	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
 	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' requires 4 connections, but only 3 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1104]
+WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' requires 4 connections, but only 3 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1116]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -5198,7 +5196,7 @@ WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' req
 	Parameter C_FCLK_CLK1_BUF bound to: TRUE - type: string 
 	Parameter C_FCLK_CLK2_BUF bound to: FALSE - type: string 
 	Parameter C_FCLK_CLK3_BUF bound to: FALSE - type: string 
-	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 1 - type: integer 
 	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
 	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
 	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
@@ -5230,8 +5228,8 @@ WARNING: [Synth 8-350] instance 'clk_wiz_0' of module 'design_1_clk_wiz_0_0' req
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 0 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
 INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:892]
-WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' requires 250 connections, but only 213 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1108]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/synth/design_1_processing_system7_0_0.v:901]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_0' requires 253 connections, but only 216 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1120]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_M_AXI_PROTOCOL bound to: 2 - type: integer 
 	Parameter C_S_AXI_PROTOCOL bound to: 1 - type: integer 
@@ -6138,9 +6136,9 @@ WARNING: [Synth 8-350] instance 'MI_REG' of module 'axi_register_slice_v2_1_17_a
 	Parameter C_RATIO bound to: 8 - type: integer 
 	Parameter C_SEL_WIDTH bound to: 3 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
-WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (21) of module 'design_1_xbar_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3752]
-WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (21) of module 'design_1_xbar_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3756]
-WARNING: [Synth 8-689] width (20) of port connection 'm_axi_wstrb' does not match port width (28) of module 'design_1_xbar_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3768]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_arprot' does not match port width (21) of module 'design_1_xbar_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3767]
+WARNING: [Synth 8-689] width (3) of port connection 'm_axi_awprot' does not match port width (21) of module 'design_1_xbar_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3771]
+WARNING: [Synth 8-689] width (20) of port connection 'm_axi_wstrb' does not match port width (28) of module 'design_1_xbar_0' [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:3783]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_processing_system7_0_100M_0' [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/synth/design_1_rst_processing_system7_0_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -6196,7 +6194,7 @@ INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/Xilinx/Vivado/2018.2/scripts
 INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (256#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized2' (256#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ipshared/f86a/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 INFO: [Synth 8-256] done synthesizing module 'design_1_rst_processing_system7_0_100M_0' (257#1) [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_rst_processing_system7_0_100M_0/synth/design_1_rst_processing_system7_0_100M_0.vhd:74]
-WARNING: [Synth 8-350] instance 'rst_processing_system7_0_100M' of module 'design_1_rst_processing_system7_0_100M_0' requires 10 connections, but only 7 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1495]
+WARNING: [Synth 8-350] instance 'rst_processing_system7_0_100M' of module 'design_1_rst_processing_system7_0_100M_0' requires 10 connections, but only 7 given [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/synth/design_1.v:1510]
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
 INFO: [Synth 8-5772] Detected attribute (* rw_addr_collision = "yes" *) on RAM gen_wr_a.gen_word_narrow.mem_reg 
@@ -6437,7 +6435,7 @@ WARNING: [Synth 8-3331] design axi_crossbar_v2_1_18_axi_crossbar__parameterized1
 WARNING: [Synth 8-3331] design axi_crossbar_v2_1_18_axi_crossbar__parameterized1 has unconnected port s_axi_awcache[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:19:41 ; elapsed = 00:19:52 . Memory (MB): peak = 1076.273 ; gain = 682.180
+Finished RTL Elaboration : Time (s): cpu = 00:18:52 ; elapsed = 00:18:58 . Memory (MB): peak = 1072.770 ; gain = 677.406
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -6554,10 +6552,10 @@ INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instan
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:19:44 ; elapsed = 00:19:55 . Memory (MB): peak = 1076.273 ; gain = 682.180
+Finished Handling Custom Attributes : Time (s): cpu = 00:18:55 ; elapsed = 00:19:01 . Memory (MB): peak = 1072.770 ; gain = 677.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:19:44 ; elapsed = 00:19:55 . Memory (MB): peak = 1076.273 ; gain = 682.180
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:18:55 ; elapsed = 00:19:01 . Memory (MB): peak = 1072.770 ; gain = 677.406
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Netlist 29-72] Incorrect value 'ture' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files.
 Resolution: Please check the value of the property and set to a correct value.
@@ -6737,7 +6735,7 @@ CRITICAL WARNING: [Netlist 29-72] Incorrect value 'ture' specified for property 
 Resolution: Please check the value of the property and set to a correct value.
 CRITICAL WARNING: [Netlist 29-72] Incorrect value 'ture' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files.
 Resolution: Please check the value of the property and set to a correct value.
-INFO: [Netlist 29-17] Analyzing 1031 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1032 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -6807,9 +6805,10 @@ Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_d
 Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
 Finished Parsing XDC File [e:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr_aclk_0.xdc] for cell 'design_1_wrapper_i/design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
 INFO: [Timing 38-2] Deriving generated clocks
+write_xdc: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2095.594 ; gain = 131.805
 Parsing XDC File [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc]
-WARNING: [Vivado 12-507] No nets matched 'CMOS_FSYNC_IBUF'. [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc:112]
-WARNING: [Vivado 12-507] No nets matched 'CMOS_PIXCLK_IBUF'. [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc:113]
+WARNING: [Vivado 12-507] No nets matched 'CMOS_FSYNC_IBUF'. [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc:114]
+WARNING: [Vivado 12-507] No nets matched 'CMOS_PIXCLK_IBUF'. [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc:115]
 Finished Parsing XDC File [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc]
 WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/top_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
@@ -6887,75 +6886,75 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 887 instances were transformed.
+  A total of 888 instances were transformed.
   FDR => FDRE: 882 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
   SRL16 => SRL16E: 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.261 . Memory (MB): peak = 2096.688 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.356 . Memory (MB): peak = 2097.133 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:21:01 ; elapsed = 00:21:10 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Constraint Validation : Time (s): cpu = 00:20:17 ; elapsed = 00:20:21 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:21:01 ; elapsed = 00:21:10 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:20:17 ; elapsed = 00:20:21 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 131).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 132).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 133).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 134).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 135).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 136).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 137).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 138).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 139).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 140).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 141).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 142).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 143).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 144).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 145).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 146).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 147).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 148).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 149).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 150).
-Applied set_property ASYNC_REG = true for cmos_sampling_i/vsync_dly1_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 151).
-Applied set_property ASYNC_REG = true for cmos_sampling_i/vsync_out_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 152).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 153).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 154).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 155).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 156).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 157).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 158).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 159).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 160).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 161).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 162).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 163).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 164).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 165).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 166).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 167).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 168).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 169).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 170).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 171).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 172).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 173).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 174).
-Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 175).
-Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 176).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 177).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 178).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 179).
-Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 180).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 136).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 137).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 138).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 139).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 140).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 141).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 142).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 143).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 144).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 145).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 146).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 147).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 148).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 149).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 150).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 151).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 152).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 153).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 154).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 155).
+Applied set_property ASYNC_REG = true for cmos_sampling_i/vsync_dly1_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 156).
+Applied set_property ASYNC_REG = true for cmos_sampling_i/vsync_out_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 157).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 158).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 159).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 160).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 161).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 162).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 163).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 164).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 165).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 166).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 167).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 168).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 169).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 170).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 171).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 172).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 173).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 174).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 175).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 176).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 177).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 178).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 179).
+Applied set_property ASYNC_REG = true for opencv_model_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 180).
+Applied set_property ASYNC_REG = true for data_conv_model_i/data_put_together_i/m_axis_tdata_reg_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 181).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 182).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 183).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_shrap_threshold_dely_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 184).
+Applied set_property ASYNC_REG = true for isp_model_axis_i/gaus_sharp_axis_i/sharp_threlode_reg. (constraint file  E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/constrs_1/new/system.xdc, line 185).
 Applied set_property DONT_TOUCH = true for design_1_wrapper_i/design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_wrapper_i/design_1_i/processing_system7_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_wrapper_i/design_1_i/axi_mem_intercon. (constraint file  auto generated constraint, line ).
@@ -7022,7 +7021,7 @@ Applied set_property DONT_TOUCH = true for design_1_wrapper_i/design_1_i/axi_smc
 Applied set_property DONT_TOUCH = true for design_1_wrapper_i/design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_wrapper_i/design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:21:02 ; elapsed = 00:21:11 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:20:18 ; elapsed = 00:20:22 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -7492,7 +7491,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'sig_cmdcntl_sm_state_reg' 
 INFO: [Synth 8-3354] encoded FSM with state register 'dmacntrl_cs_reg' using encoding 'sequential' in module 'axi_vdma_sm__parameterized0'
 INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'axi_protocol_converter_v2_1_17_b2s_rd_cmd_fsm', re-encoding will not be performed
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:21:25 ; elapsed = 00:21:36 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:20:44 ; elapsed = 00:20:52 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -7519,7 +7518,7 @@ Report RTL Partitions:
 |6     |s00_entry_pipeline_imp_I9HTTY__GC0 |           1|       203|
 |7     |bd_a878__GC0                       |           1|      1684|
 |8     |design_1_clk_wiz_0_0_clk_wiz__GC0  |           1|         4|
-|9     |design_1__GCB0                     |           1|     38871|
+|9     |design_1__GCB0                     |           1|     38808|
 |10    |design_1__GCB1                     |           1|     31364|
 |11    |top__GCB0                          |           1|     24656|
 |12    |top__GCB1                          |           1|      6990|
@@ -14689,7 +14688,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\design_1
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\design_1_wrapper_i/design_1_i /i_0/axi_vdma_imgCapture0/U0/\GEN_SPRT_FOR_S2MM.S2MM_REGISTER_MODULE_I/I_DMA_REGISTER/DMA_IRQ_MASK_GEN.dma_irq_mask_i_reg[26] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:27:04 ; elapsed = 00:27:18 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:27:15 ; elapsed = 00:27:27 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -14763,7 +14762,7 @@ Report RTL Partitions:
 |5     |s00_entry_pipeline_imp_I9HTTY__GC0 |           1|       178|
 |6     |bd_a878__GC0                       |           1|      1382|
 |7     |design_1_clk_wiz_0_0_clk_wiz__GC0  |           1|         4|
-|8     |design_1__GCB0                     |           1|     23833|
+|8     |design_1__GCB0                     |           1|     23770|
 |9     |design_1__GCB1                     |           1|     19025|
 |10    |top__GCB0                          |           1|     12878|
 |11    |top__GCB1                          |           1|      4904|
@@ -14784,7 +14783,7 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_wrapper_i/design_1_i/clk_wiz_0/inst/clk_in1' to pin 'processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:27:20 ; elapsed = 00:27:35 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:27:32 ; elapsed = 00:27:44 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -14796,7 +14795,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:28:07 ; elapsed = 00:28:22 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Timing Optimization : Time (s): cpu = 00:28:20 ; elapsed = 00:28:32 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -14864,7 +14863,7 @@ Report RTL Partitions:
 |17    |sc_util_v1_0_3_axi_reg_stall__8    |           2|       317|
 |18    |sc_util_v1_0_3_axi_reg_stall__9    |           2|        28|
 |19    |sc_util_v1_0_3_axi_reg_stall__10   |           2|        57|
-|20    |design_1_GT0                       |           1|     42903|
+|20    |design_1_GT0                       |           1|     42840|
 +------+-----------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -14905,7 +14904,7 @@ INFO: [Synth 8-4765] Removing register instance (\data_put_together_i/s_axis_tda
 INFO: [Synth 8-4765] Removing register instance (\data_put_together_i/s_axis_tdata_dly1_reg[0]__0 ) from module (data_conv_model) as it is equivalent to (\data_put_together_i/s_axis_tdata_dly1_reg[0] ) and driving same net [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/new/data_put_together.v:62]
 INFO: [Synth 8-4765] Removing register instance (\data_put_together_i/s_axis_tlast_dly1_reg__0 ) from module (data_conv_model) as it is equivalent to (\data_put_together_i/s_axis_tlast_dly1_reg ) and driving same net [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/new/data_put_together.v:71]
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:28:30 ; elapsed = 00:28:46 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Technology Mapping : Time (s): cpu = 00:28:42 ; elapsed = 00:28:55 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14955,7 +14954,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.srcs/sources_1/new/cmos_sampling.v:66]
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:28:33 ; elapsed = 00:28:49 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished IO Insertion : Time (s): cpu = 00:28:46 ; elapsed = 00:28:58 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -14968,7 +14967,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:28:34 ; elapsed = 00:28:49 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:28:46 ; elapsed = 00:28:59 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14981,13 +14980,13 @@ Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-115] binding instance 'i_0' in module 'axi_vdma__parameterized2' to reference 'axi_vdma_vid_cdc__parameterized0' which has no pins
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:28:39 ; elapsed = 00:28:54 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:28:51 ; elapsed = 00:29:04 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:28:39 ; elapsed = 00:28:55 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:28:51 ; elapsed = 00:29:04 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-5543] Port 'm_0_axis_tlast' in module 'axis_switch' has MARK_DEBUG and also connected to other port(s) having MARK_DEBUG; consider putting MARK_DEBUG on one only
 CRITICAL WARNING: [Synth 8-5543] Port 'm_1_axis_tlast' in module 'axis_switch' has MARK_DEBUG and also connected to other port(s) having MARK_DEBUG; consider putting MARK_DEBUG on one only
@@ -14996,13 +14995,13 @@ CRITICAL WARNING: [Synth 8-5543] Port 'pixel_clk_out' in module 'cmos_sampling' 
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:28:40 ; elapsed = 00:28:55 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:28:52 ; elapsed = 00:29:05 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:28:40 ; elapsed = 00:28:56 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:28:52 ; elapsed = 00:29:05 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -15109,7 +15108,7 @@ Report Cell Usage:
 |15    |BUFG             |     5|
 |16    |CARRY4           |  1145|
 |17    |DSP48E1_1        |     2|
-|18    |LUT1             |  1755|
+|18    |LUT1             |  1692|
 |19    |LUT2             |  2961|
 |20    |LUT3             |  4091|
 |21    |LUT4             |  3251|
@@ -15133,7 +15132,7 @@ Report Cell Usage:
 |39    |FDRE             | 18539|
 |40    |FDSE             |   650|
 |41    |IBUF             |    13|
-|42    |IOBUF            |     2|
+|42    |IOBUF            |     3|
 |43    |OBUF             |     6|
 +------+-----------------+------+
 
@@ -15141,7 +15140,7 @@ Report Instance Areas:
 +------+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------+
 |      |Instance                                                                                                  |Module                                                                |Cells |
 +------+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------+
-|1     |top                                                                                                       |                                                                      | 40897|
+|1     |top                                                                                                       |                                                                      | 40835|
 |2     |  opencv_model_i                                                                                          |opencv_model                                                          |  5333|
 |3     |    sobel_axis_i                                                                                          |sobel_axis                                                            |  5280|
 |4     |      maxtri7x7_shift_i                                                                                   |maxtri7x7_shift                                                       |   176|
@@ -15164,8 +15163,8 @@ Report Instance Areas:
 |21    |  cmos_sampling_i                                                                                         |cmos_sampling                                                         |    20|
 |22    |  SC30_v1_0_S00_AXI_inst                                                                                  |SC30_v1_0_S00_AXI                                                     |  1317|
 |23    |  Trgger                                                                                                  |Trgger                                                                |   151|
-|24    |  design_1_wrapper_i                                                                                      |design_1_wrapper                                                      | 31518|
-|25    |    design_1_i                                                                                            |design_1                                                              | 31510|
+|24    |  design_1_wrapper_i                                                                                      |design_1_wrapper                                                      | 31456|
+|25    |    design_1_i                                                                                            |design_1                                                              | 31447|
 |26    |      axi_smc                                                                                             |design_1_axi_smc_0                                                    |  2148|
 |27    |        inst                                                                                              |bd_afc3                                                               |  2148|
 |28    |          clk_map                                                                                         |clk_map_imp_5Y9LOC                                                    |    41|
@@ -16370,15 +16369,15 @@ Report Instance Areas:
 |1227  |                \WR.b_channel_0                                                                           |axi_protocol_converter_v2_1_17_b2s_b_channel                          |    64|
 |1228  |                  bid_fifo_0                                                                              |axi_protocol_converter_v2_1_17_b2s_simple_fifo                        |    33|
 |1229  |                  bresp_fifo_0                                                                            |axi_protocol_converter_v2_1_17_b2s_simple_fifo__parameterized0        |     7|
-|1230  |      processing_system7_0                                                                                |design_1_processing_system7_0_0                                       |   245|
-|1231  |        inst                                                                                              |processing_system7_v5_5_processing_system7                            |   245|
+|1230  |      processing_system7_0                                                                                |design_1_processing_system7_0_0                                       |   182|
+|1231  |        inst                                                                                              |processing_system7_v5_5_processing_system7                            |   182|
 +------+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:28:40 ; elapsed = 00:28:56 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:28:52 ; elapsed = 00:29:05 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 3 critical warnings and 2573 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:07:43 ; elapsed = 00:27:46 . Memory (MB): peak = 2097.926 ; gain = 682.180
-Synthesis Optimization Complete : Time (s): cpu = 00:28:40 ; elapsed = 00:28:56 . Memory (MB): peak = 2097.926 ; gain = 1703.832
+Synthesis Optimization Runtime : Time (s): cpu = 00:08:41 ; elapsed = 00:27:51 . Memory (MB): peak = 2098.363 ; gain = 677.406
+Synthesis Optimization Complete : Time (s): cpu = 00:28:52 ; elapsed = 00:29:05 . Memory (MB): peak = 2098.363 ; gain = 1703.000
 INFO: [Project 1-571] Translating synthesized netlist
 CRITICAL WARNING: [Netlist 29-72] Incorrect value 'ture' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files.
 Resolution: Please check the value of the property and set to a correct value.
@@ -16403,30 +16402,28 @@ Resolution: Please check the value of the property and set to a correct value.
 CRITICAL WARNING: [Netlist 29-72] Incorrect value 'ture' specified for property 'dont_touch'. Expecting type 'bool' with possible values of '1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files.
 Resolution: Please check the value of the property and set to a correct value.
 INFO: [Common 17-14] Message 'Netlist 29-72' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Netlist 29-17] Analyzing 2093 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2094 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_wrapper_i/design_1_i/clk_wiz_0/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 768 instances were transformed.
+  A total of 769 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 48 instances
   FDR => FDRE: 604 instances
-  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 110 instances
   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
   SRL16 => SRL16E: 3 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-1812 Infos, 500 Warnings, 106 Critical Warnings and 0 Errors encountered.
+1812 Infos, 498 Warnings, 106 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:28:56 ; elapsed = 00:29:12 . Memory (MB): peak = 2097.926 ; gain = 1710.941
-INFO: [Common 17-600] The following parameters have non-default value.
-tcl.collectionResultDisplayLimit
+synth_design: Time (s): cpu = 00:29:08 ; elapsed = 00:29:21 . Memory (MB): peak = 2098.363 ; gain = 1710.492
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'E:/WorkSpace/project/FPGA/prj_sc4210_dvp/prj_sc4210_dvp/prj_sc4210_dvp.runs/synth_1/top.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2097.926 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2098.363 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.400 . Memory (MB): peak = 2097.926 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  2 16:42:05 2020...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.447 . Memory (MB): peak = 2098.363 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Mar  2 17:19:53 2020...

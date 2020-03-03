@@ -39,13 +39,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="62"/>
-    <Option Name="WTModelSimExportSim" Val="62"/>
-    <Option Name="WTQuestaExportSim" Val="62"/>
-    <Option Name="WTIesExportSim" Val="62"/>
-    <Option Name="WTVcsExportSim" Val="62"/>
-    <Option Name="WTRivieraExportSim" Val="62"/>
-    <Option Name="WTActivehdlExportSim" Val="62"/>
+    <Option Name="WTXSimExportSim" Val="63"/>
+    <Option Name="WTModelSimExportSim" Val="63"/>
+    <Option Name="WTQuestaExportSim" Val="63"/>
+    <Option Name="WTIesExportSim" Val="63"/>
+    <Option Name="WTVcsExportSim" Val="63"/>
+    <Option Name="WTRivieraExportSim" Val="63"/>
+    <Option Name="WTActivehdlExportSim" Val="63"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -131,8 +131,8 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/design_1_wrapper.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../FPGA_backup/prj_sc4236_64M15fps/prj_sc030_V2.0_emmc/prj_sc030/prj_sc030.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v"/>
-          <Attr Name="ImportTime" Val="1551151670"/>
+          <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/design_1/hdl/design_1_wrapper.v"/>
+          <Attr Name="ImportTime" Val="1583138609"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

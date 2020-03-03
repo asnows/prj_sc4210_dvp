@@ -59,6 +59,8 @@ set_property IOSTANDARD LVCMOS18 [get_ports CMOS_PWDN]
 set_property IOSTANDARD LVCMOS18 [get_ports CMOS_RESETB]
 set_property IOSTANDARD LVCMOS18 [get_ports CMOS_Trigger0]
 
+
+
 #4236
 #set_property PACKAGE_PIN F17 [get_ports CMOS_PWDN]
 #set_property PACKAGE_PIN F20 [get_ports CMOS_RESETB]
@@ -119,6 +121,9 @@ set_property PACKAGE_PIN L15 [get_ports E_OUT2]
 set_property IOSTANDARD LVCMOS18 [get_ports E_OUT2]
 set_property PACKAGE_PIN L14 [get_ports E_IN1]
 set_property IOSTANDARD LVCMOS18 [get_ports E_IN1]
+
+set_property IOSTANDARD LVCMOS18 [get_ports PHY_RST_tri_io]
+set_property PACKAGE_PIN Y14 [get_ports PHY_RST_tri_io]
 
 #create_clock -period 41.667 -name CMOS_PIXCLK -waveform {0.000 20.833} [get_ports CMOS_PIXCLK]
 #set_clock_groups -asynchronous -group [get_clocks clk_fpga_0] -group [get_clocks CMOS_PIXCLK]
